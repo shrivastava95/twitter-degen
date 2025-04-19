@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",                     /* Specify ECMAScript target version */
+    "module": "CommonJS",                  /* Specify module code generation */
+    "outDir": "./dist",                     /* Redirect output structure to the directory */
+    "rootDir": "./",                      /* Specify the root directory of input files */
+    "strict": true,                       /* Enable all strict type-checking options */
+    "esModuleInterop": true,              /* Enables emit interoperability between CommonJS and ES Modules */
+    "skipLibCheck": true,                 /* Skip type checking of declaration files */
+    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+    "resolveJsonModule": true             /* Include modules imported with .json extension */
+  },
+  "include": [
+    "server.ts",                        /* Include server entry point */
+    "scraper.ts"                        /* Include scraper module */
+  ],                                  
+  "exclude": [
+    "node_modules",                     /* Exclude dependencies */
+    "agent-twitter-client"              /* Exclude the nested package */
+  ]
+} 

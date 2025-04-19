@@ -1,0 +1,26 @@
+{
+  "name": "twitter-link-api",
+  "version": "1.0.0",
+  "description": "A local API to scrape Twitter link information",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "serve": "npm run build && npm start",
+    "dev": "ts-node server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "agent-twitter-client": "file:agent-twitter-client",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

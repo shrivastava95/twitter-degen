@@ -11,7 +11,7 @@ Simple local API server to categorize and scrape basic information from Twitter 
 
 ## Prerequisites
 
-*   Node.js (v20.18.1 or higher recommended)
+*   Node.js (v20.18.1 or higher recommended due to dependencies like `undici`. Tested on v20.15.0 with Express v4.)
 *   npm
 *   Twitter Account Credentials
 
@@ -21,6 +21,8 @@ Simple local API server to categorize and scrape basic information from Twitter 
 2.  **Install Dependencies:** 
     ```bash
     npm install
+    # Ensure Express v4 (stable) is installed (may require downgrade if v5 was installed)
+    npm install express@^4.17.1 @types/express@^4.17.13 --save --save-dev
     # Install & build the nested client
     cd agent-twitter-client && npm install && npm run build && cd ..
     # Link the local client
